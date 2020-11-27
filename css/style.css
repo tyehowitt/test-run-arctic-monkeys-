@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro:100,200,300,400,500,600,700');
+
+body,
+		html{
+	    font-family: 'Raleway',cursive;
+	    font-weight: bold;
+	    font-size: 16px;
+	    overflow-x: hidden;
+	    background-color: black;
+		}
+		.shade {
+			display: inline-block !important;
+			max-width: 75%;
+			padding-left: 8px;
+			padding-right: 8px;
+			background-color: rgba(0,0,0,.3);
+		}
+		#app-bar {
+	    font-family: 'Peyo';
+			background-color: rgba(0,0,0,0) !important;
+		}
+		#main-stage {
+			position: relative;
+			overflow: hidden;
+			color: white;
+			background-image: url("../../../project-content/stream-one/images/2013ArcticMonkeys_Press_ZackeryMichael-240613.jpg");
+			background-position: top;
+			background-repeat: no-repeat;
+			background-size: cover;
+			margin: 0 !important;
+			height: 100vh;
+		}
+		#main-stage.play {
+			background: black;
+		}
+		#main-stage.play>video {
+			display: block;
+		}
+		#main-stage>video {
+			position: absolute;
+			display: none;
+			z-index: 1;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: bottom;
+			opacity: .6;
+		}
+		#main-stage>.container {
+			position: relative;
+			z-index: 2;
+		}
